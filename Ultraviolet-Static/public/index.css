@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  margin: 0;
+  background-color: #22223b;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  margin-top: 120px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  animation: sliderdown 2.3s;
+  animation-fill-mode: forwards;
+
+}
+.box {
+  position: absolute;
+  animation: slider 2.5s;
+  animation-fill-mode: forwards;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  margin-right: 45px;
+}
+li {
+  color: #9a8c98;
+  margin: 2.5vw;
+  list-style-type: none;
+  font-size: 2.3em;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+li:hover {
+  transform: translateY(-6px);
+}
+
+#uv-frame {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+#uv-error {
+  color: #ff6666 !important;
+  white-space: pre-wrap;
+}
+
+#uv-error-code {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#uv-register-sw {
+  color: white;
+  background: #555555;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 20px;
+  line-height: 16px;
+  display: none;
+}
+
+#uv-register-sw:active {
+  background: #333333;
+}
+
+#uv-register-sw.show {
+  display: block;
+}
+h1 {
+  position: absolute;
+  color: #f2e9e4;
+  font-size: 7em;
+}
+#uv-address {
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 30%;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 48px;
+  background: none;
+  padding: 0px 17px;
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  outline: none;
+  color: #fff;
+  margin-top: 400px;
+
+}
+#uv-address:focus {
+  animation: expand 1s forwards;
+}
+#uv-address:not(focus) {
+  animation: shrink 1s forwards;
+}
